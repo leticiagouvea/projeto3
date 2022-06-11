@@ -10,74 +10,126 @@ body {
 .barrasuperior {
     width: 100%;
     height: 92px;
-    background-color: lightcoral;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
+    background-color: #CF2B2B;
 }
-
 .top {
     width: 414px;
     height: 92px;
     background-color: #CF2B2B;
     margin: 0 auto;
-    padding: 12px;
+    padding-top: 10px;
 }
-
 .top h1 {
     font-family: 'Righteous', cursive;
     font-size: 44px;
     font-weight: 400;
-    color: #ffffff; 
+    color: #ffffff;
+    margin-left: 20px;
 }
 .top h2 {
     font-size: 18px;
     color: #ffffff;
     font-weight: 400;
+    margin-left: 20px;
 }
+
 
 .conteudo {
-    background-color: lawngreen;
     width: 414px;
-    height: 900px; 
-    margin: 0 auto; 
+    height: 1000px; 
+    margin: 0 auto;
 }
 
-.categorias {
-    background-color: lightskyblue;
-    width: 414px;
-    height: 300px;
-    margin: 0 auto;
-    margin-top: 120px;
+.subtitulo1 {
+    margin: 120px 0px 0px 20px;
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    font-weight: 400;
 }
+.subtitulos {
+    margin: 0px 0px 0px 20px; 
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.categoria {
+    width: 414px;
+    height: 265px;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+}
+.cardapio {
+    margin-top: 15px;
+    width: 600px;
+    display: flex;
+}
+
+.opcao {
+    width: 172px;
+    height: 216px;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px -4px #000000;
+    background-color: #ffffff;
+    margin-left: 20px;
+    text-align: left;
+}
+.opcao img {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    margin: 20px 0px 0px 14px;
+    object-fit: cover;
+}
+.opcao p:nth-child(2) { 
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+    margin: 10px 0px 0px 14px;
+}
+.opcao p:nth-child(3) { 
+    font-size: 15px;
+    font-weight: 300;
+    color: #a6a6a6;
+    margin: 8px 0px 0px 14px;
+}
+.opcao p:nth-child(4) { 
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin: 10px 0px 0px 14px;
+}
+
 
 .barrainferior {
-    background-color: lightcoral;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 92px;
     z-index: 2;
+    background-color: #ffffff;
 }
-
 .under {
     width: 414px;
     height: 92px;
-    background-color: rgb(178, 32, 159);
-    margin: 0 auto; 
-    text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding-top: 15px;
 }
-
-.fecharpedido {
-    background-color: gray;
+.under p {
     width: 364px;
     height: 61px;
     border-radius: 50px;
-    border: 0px;
-    margin-top: 15px;
+    background-color: #CBCBCB;
+    text-align: center;
     font-size: 18px;
     font-weight: 400;
     color: #ffffff;
+    margin-left: 20px;
+    padding-top: 20px;
 }
