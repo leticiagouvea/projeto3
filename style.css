@@ -15,6 +15,7 @@ body {
     left: 0;
     z-index: 2;
     background-color: #CF2B2B;
+    box-shadow: 0px 4px 4px 0px #00000040;
 }
 .top {
     width: 414px;
@@ -57,7 +58,7 @@ body {
     font-weight: 400;
 }
 
-.categoria {
+.categoria1, .categoria2, .categoria3 {
     width: 414px;
     height: 265px;
     overflow-x: scroll;
@@ -77,33 +78,38 @@ body {
     background-color: #ffffff;
     margin-left: 20px;
     text-align: left;
+    border: 4px solid #ffffff;
 }
 .opcao img {
     width: 144px;
     height: 87px;
     border-radius: 4px;
-    margin: 20px 0px 0px 14px;
+    margin: 14px 0px 0px 10px;
     object-fit: cover;
 }
 .opcao p:nth-child(2) { 
     font-size: 16px;
     font-weight: 700;
     color: #333333;
-    margin: 10px 0px 0px 14px;
+    margin: 10px 0px 0px 10px;
 }
 .opcao p:nth-child(3) { 
     font-size: 15px;
     font-weight: 300;
     color: #a6a6a6;
-    margin: 8px 0px 0px 14px;
+    margin: 10px 0px 0px 10px;
 }
 .opcao p:nth-child(4) { 
     font-size: 16px;
     font-weight: 400;
     color: #000000;
-    margin: 10px 0px 0px 14px;
+    margin: 10px 0px 0px 10px;
 }
 
+.borda {
+    border: 4px solid #32B72F;
+    transition-duration: .8s;
+} 
 
 .barrainferior {
     position: fixed;
@@ -113,23 +119,27 @@ body {
     height: 92px;
     z-index: 2;
     background-color: #ffffff;
-}
-.under {
-    width: 414px;
-    height: 92px;
-    background-color: #ffffff;
-    margin: 0 auto;
     padding-top: 15px;
 }
-.under p {
+
+.botaoconcluir {
     width: 364px;
     height: 61px;
-    border-radius: 50px;
-    background-color: #CBCBCB;
+    border-radius: 50px; 
+    background-color: rgb(173, 173, 173); 
     text-align: center;
     font-size: 18px;
     font-weight: 400;
     color: #ffffff;
     margin-left: 20px;
     padding-top: 20px;
+    margin: 0 auto;
+}
+.botaoselecionado {
+    background-color: #32B72F;
+    transition-duration: .8s;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
 }
