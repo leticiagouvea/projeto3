@@ -11,8 +11,6 @@ let candyprice;
 
 function bordaclick1(pratoSelecionado) {
     let click = document.querySelector('.borda');
-    
-
     food = pratoSelecionado;
     foodname = food.querySelector('.food-name').innerText
     foodprice = food.querySelector('.food-price').innerHTML
@@ -23,6 +21,15 @@ function bordaclick1(pratoSelecionado) {
     pratoSelecionado.classList.add('borda');
 
     pedidoSelecionado();
+}
+
+function checkAtivado(elemento) {
+    let check = elemento.querySelector('.categoria1 .checkicon')
+    let ativado = document.querySelector('.categoria1 .ativado')
+    if (ativado !== null) {
+        ativado.classList.remove('ativado')
+    }
+    check.classList.add('ativado')
 }
 
 function bordaclick2(bebidaSelecionada) {
@@ -39,6 +46,15 @@ function bordaclick2(bebidaSelecionada) {
     pedidoSelecionado();
 } 
 
+function checkAtivado2(elemento) {
+    let check = elemento.querySelector('.categoria2 .checkicon')
+    let ativado = document.querySelector('.categoria2 .ativado')
+    if (ativado !== null) {
+        ativado.classList.remove('ativado')
+    }
+    check.classList.add('ativado')
+}
+
 function bordaclick3(doceSelecionado) {
     let click = document.querySelector('.categoria3 .borda');
     candy = doceSelecionado;
@@ -51,6 +67,15 @@ function bordaclick3(doceSelecionado) {
     doceSelecionado.classList.add('borda');
 
     pedidoSelecionado();
+}
+
+function checkAtivado3(elemento) {
+    let check = elemento.querySelector('.categoria3 .checkicon')
+    let ativado = document.querySelector('.categoria3 .ativado')
+    if (ativado !== null) {
+        ativado.classList.remove('ativado')
+    }
+    check.classList.add('ativado')
 }
 
 function pedidoSelecionado() {
@@ -74,4 +99,4 @@ function pedidoSelecionado() {
 
         p.innerHTML = `<a href="https://wa.me/5521984054853?text=${message}">Concluir pedido</a>`
     }
-}
+} 
